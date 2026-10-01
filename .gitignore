@@ -1,0 +1,26 @@
+# User-facing docs live in docs/. Working notes live in docs-private/.
+# visual-reports/ holds the HTML lookups. backlog/ is the Backlog.md board.
+docs-private/
+
+# Backlog.md only resolves a custom directory from a config file at the repo root.
+# The board markdown is under docs-private/backlog/. This pointer stays local.
+backlog.config.yml
+
+# Secrets and local index state
+collections.yaml
+.collections/
+.env
+.env.*
+!.env.example
+
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+.pytest_cache/
+
+# Agent leftovers
+.playwright-cli/
+scratch/
